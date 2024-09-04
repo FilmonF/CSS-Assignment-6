@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <style>
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+       
+    }
+
+    
+    .navbar {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+    }
+
+    .navbar .right ul, li {
+      list-style: none;
+      display: flex;
+      justify-content: right;
+      margin-left: 2rem;
+      max-width: 50px;
+
+    }
+
+    .left {
+      /* margin-left: auto; */
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 1rem;
+    }
+
+    @media  (max-width:800px) {
+      .navbar {
+
+        display: flex;
+        flex-direction: column;
+
+        color: rgb(118, 68, 68);
+        padding: 20px 20px; 
+          margin-top: 3rem;
+        
+      }
+      
+      }
+
+      @media  (max-width:800px) {
+      .right {
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10rem;
+        gap: 1rem;
+        
+      }
+      
+      }
+
+    .Logo{
+      font-size: 1.5rem;
+    }
+
+  
+      
+    
+   
+
+    .firstsection {
+        
+      background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5))
+        url(./img/hero.jpg) center no-repeat;
+        background-image: url(./img/hero.jpg);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+.firstsection h2 {
+    font-size: 3.5rem;
+
+}
+
+.firstsection h1 {
+    font-size: 2.5rem;
+
+}
+
+    button{
+        border-radius: 5px;
+        width: 15rem;
+        height: 3rem;
+        cursor: pointer;
+    }
+
+    button:hover{
+        color: rgb(218, 214, 214);
+        background-color: rgb(23, 8, 69);
+    }
+
+    @media (max-width:600px) {
+
+      .firstsection{
+        display: flex;
+        flex-direction: column;
+      }
+      
+    }
+    .somework{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 6rem 10rem 5rem 10rem;
+    }
+
+    @media (max-width:800px) {
+      .somework{
+        margin: 5rem;
+
+      }
+      
+      
+    }
+
+    .firstrow {
+        padding: 30px;
+        margin: 20px 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    
+
+    }
+
+    .secondrow {
+        padding: 0 30px;
+        margin: 0 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+ @media (max-width:600px) {
+  .secondrow, .firstrow { padding: 0px 0px;
+    margin: 20px;
+
+  }
+  
+ }
+    
+
+   
+
+    .Features{
+     display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20rem 10rem 5rem 10rem;
+    }
+
+    @media (max-width:600px) {
+
+.Features {
+  margin: 5rem;
+}
+
+}
+    .cards{
+        display: flex;
+        text-align: center;
+       margin: 2rem 5rem 10rem 5rem;
+       /* max-width: 50rem; */
+       gap: 3rem;
+        
+    }
+
+    .featuresandcards{
+        background-color:#efeaea;
+
+    }
+
+    @media (max-width:800px) {
+      .cards{
+        display: flex;
+        flex-direction: column;
+        margin: 5rem;
+      }
+      
+    }
+
+    .join{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0rem 10rem 5rem 10rem;
+
+    }
+
+    @media (max-width:800px) {
+      .join{
+        margin: 5rem;
+
+      }
+      }
+      
+    
+
+    input[type=email]{
+        width: 70%;
+        border-radius: 0.4rem;
+        padding: 1rem;
+
+
+    }
+
+    @media (max-width:600px) {
+      input[type=email] {
+        height: ;
+      }
+      
+    }
+
+
+
+
+    .subscription{
+        margin-top: 5rem;
+        display:flex;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 1.5rem;
+        
+    }
+
+    button{
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        border: none;
+    }
+
+    @media (max-width:800px) {
+      .subscription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        width: 20rem;
+      
+      }
+      
+    }
+
+    footer{
+        background-color: rgba(17, 11, 23, 0.856) ;
+        height: 10rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+  </style>
+  <body>
+    <header>
+      <div class="navbar">
+          <div class="left">
+            <a href="#" class="Logo">Website Logo</a>
+          </div>
+    
+          <div class="right">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+          </div>
+      </div>
+    </header>
+
+
+    <main >
+        <section class="firstsection">
+    
+    
+          <h2>Responsive Template Page</h2>
+          <h1>Full Stack Training Class</h1>
+          <button>DOWNLOAD IT HERE</button>
+    
+        </section>
+        <br>
+    <br>
+        <section class="somework">
+    
+          <h2>Some Of Our Work</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate
+            reiciendis consequatur odio porro atque aliquam perferendis vitae ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate
+           ferendis</p>
+          
+        </section >
+
+        <section class="pics">
+          <section class="firstrow">
+              <img style="width: 36%;" height="380vh" src="./img/coast.jpg" alt="pic unloaded">
+              <img style="width: 60%;" height="380vh" src="./img/island.jpg" alt="pic unloaded">
+  
+          </section>
+          
+          <section class="secondrow">
+              <img style="width: 60%;" height="380vh" src="./img/balloon.jpg" alt="pic unloaded">
+              <img style="width: 36%;" height="380vh" src="./img/mountain.jpg" alt="pic unloaded">
+  
+          </section>
+        </section>
+
+       
+
+       
+        <section class="featuresandcards">
+
+            <section class="Features">
+                <h2> Features and Services</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora architecto in delectus, incidunt voluptate adipisci magni autem minima aspernatur cupiditate tenetur ducimus maiores deleniti neque itaque deserunt eligendi saepe dolorem.</p>
+   
+                <hr style="width: 30%;" color="blue"> 
+           </section>
+
+            <section class="cards">
+                <div class="photography">
+                    <h2>Photography</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio officia ipsum vero, reprehenderit quia numquam cumque recusandae beatae nobis modi.</p>
+        
+                </div>
+    
+                <div class="Web Development">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores iste neque repellendus voluptate nostrum exercitationem debitis, ratione necessitatib .</p>
+                </div>
+        
+                <div class="Content Editing">
+                    <h2>Content Editing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem consequatur illum laudantium quaerat dolor cupiditate provident alias unde quam tempo </p>
+                </div>
+
+            
+            </section>
+
+
+
+
+            <section class="join">
+                <h2>Join Our Newsletter</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum asperiores, 
+                  illo cupiditate voluptatibus perferendis soluta nulla totam aliquid quo eos rem natus veritatis eaque 
+                  fugiat quaerat quidem?</p>
+                <hr style="width: 30%;" color="blue"">
+            
+               
+                <div class="subscription">
+                    <input type="email" placeholder="email">
+    
+                    <button> Subscribe Now </button>
+                </div>
+            </section>
+            <footer>
+                <h4>Made by Filmon</h4>
+        
+            </footer>
+    
+
+        </section>
+
+        
+    </main>
+
+    
+  </body>
+</html>
